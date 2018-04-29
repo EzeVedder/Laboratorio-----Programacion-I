@@ -21,30 +21,28 @@ int main()
 
     int num[Tam] = {4,3,5,2,6};
     int i;
-    int vector[Tam];
+    int indice = -1;
+    int aux;
 
-    printf("Ingrese la letra a buscar: ");
-    fflush(stdin);
-    scanf("%d",&num);
+    printf("Ingrese un nro a buscar: ");
+    scanf("%d",&aux);
 
     for(i=0;i<Tam;i++);
     {
-        if(num==vector[i])
+        if(num[i]==aux)
         {
-            printf("Se encontro el caracter en el array");
+            indice = i;
         }
-        else
-        {
-            printf("No se encontro el caracter en el array");
-        }
+
     }
+
 
     /*for(i=0;i<Tam;i++)
     {
         printf("%c",caracter[i]);
     }
 
-    /*char nombre[20];
+    char nombre[20];
 
     printf("Digite su nombre: ");
     gets(nombre);
