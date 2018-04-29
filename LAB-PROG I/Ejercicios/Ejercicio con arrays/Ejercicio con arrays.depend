@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1525039553 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\ejercicio con arrays\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1525038966 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\ejercicio con arrays\arraycaracteres.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
