@@ -1,0 +1,56 @@
+----------VECTORES---------12/04/2018
+
+Conjunto de elementos para guardar variables.
+
+Recorrer los valores la cantidad de veces que se necesite.
+
+Declaracion de vectores = misma manera que variable escalar
+
+-------> int vector[5] (con los corchetes decimos que vamos a trabajar con un vector y con el nro
+			la cant de elementos)
+			20 bytes en memoria porque son 1 byte por entero (int)
+
+cADA ENTERO VA A ESTAR REPRESENTADO POR UNA DIRECCION EN MEMORIA
+SE INGRESE A CADA ELEMENTO A TRAVES DE UN SUBINDICE
+
+POSICION 1---- vector valor 9
+
+POSICION 2---- vector valor -3
+
+POSICION 3---- vector valor 5
+
+POSICION 4---- vector valor 14
+
+POSICION 5---- vector valor -4
+
+se puede inicializar el vector en la declaracion de variable
+
+EN EL PRINTF NO SE PUEDE MOSTRAR EL VECTOR-------HAY QUE USAR UNA ESTRUCTURA REPETITIVA
+SE USA UN FOR{}, PORQUE CONOCEMOS LA CANTIDAD DE ELEMENTOS QUE EXISTEN DENTRO DEL VECTOR
+
+variable de control del for se inicia en 0 (i=0)
+i<5(tamaño del vector----adentro de los limites del vector----siempre menor a la cantidad del mismo)
+i++(incremento la variable de control)
+
+la variable vector guarda direcciones de memoria por eso el contenido de la variable con & o vector muestra la direccion
+
+LOS VECTORES SON VARIABLES POR REFERECIA (ES DECIR, LA DIRECCION DE MEMORIA DONDE SE ALOJA EL VALOR)
+
+CARGA SECUENCIAL-----CARGA CONSECUTIVA SIN SALTEARME NINGUN NUMERO, LA CARGA SE HACE DE MANERA COMPLETA
+
+CARGA ALEATORIA------LE PIDO AL USUARIO DONDE VA A GUARDAR EL DATO Y SI DESEA CONTINUAR O NO CARGANDO DATOS
+
+Si la condicion del for es mayor  a el valor de elementos del vector, este devuelve los elementos mas la basura en memoria sin ningun valor
+PUEDO LLEGAR A PISAR EL VALOR DE MIS ELEMENTOS O DE OTRO PROGRAMA SI REALIZO LA CONDICION DE ESA MANERA
+
+SIEMPRE EMPIEZA EN 0 Y TERMINA EN EL TAMAÑO DEL ARRAY QUE HAYA DEFINIDO PARA EL VECTOR----DE OTRA MANERA ROMPE
+EL #DEFINE ES UNA DIRECTIVA DEL PRECOMPILADOR CON: #define TAM 5 ANTES DE COMPILAR, LEE EN TODO EL CODIGO BUSCANDO LA PALABRA
+TAM Y LA REEMPLAZA CON EL VALOR ASIGNADO----- 
+LAS CONSTANTES SE DEFINEN EN TIEMPO DE EJECUCION
+
+PREGUNTA DE PARCIAL : DIFERENCIA ENTRE DEFINIDO Y CONSTANTE
+
+PASAJE POR REFERENCIA = PASAR POR MEMORIA
+
+
+

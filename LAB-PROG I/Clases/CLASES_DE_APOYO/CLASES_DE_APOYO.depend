@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1523712986 source:c:\users\alumno\desktop\clases_de_apoyo\clases_de_apoyo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1523720252 source:c:\users\alumno\desktop\clasesdeapoyo\clases_de_apoyo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+
+1523707630 source:c:\users\eze\documents\utn\2018\clases\clases\lab - prog i\clases_de_apoyo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1524138384 source:c:\users\alumno\desktop\lab-eze\lab-prog i\clases\clases_de_apoyo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
