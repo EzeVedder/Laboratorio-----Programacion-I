@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1523823691 source:c:\users\eze\documents\utn\2018\lab\lab-prog i\ejercicios\clase_02\main.c
+	<stdio.h>
+	<stdlib.h>
+

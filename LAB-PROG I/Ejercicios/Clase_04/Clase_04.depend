@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1523910843 source:c:\users\eze\documents\utn\2018\lab\lab-prog i\ejercicios\clase_04\utn.c
+	<stdio.h>
+	<stdlib.h>
+
+1523910974 source:c:\users\eze\documents\utn\2018\lab\lab-prog i\ejercicios\clase_04\main.c
+	<stdio.h>
+	<stdlib.h>
+	"utn.h"
+
+1523910843 c:\users\eze\documents\utn\2018\lab\lab-prog i\ejercicios\clase_04\utn.h
+

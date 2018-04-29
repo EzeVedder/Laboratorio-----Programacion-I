@@ -1,0 +1,24 @@
+-------VECTORES PARALELOS PARTE 2-------20/04/2018
+
+INT BUSCARLEGAJO(INT LEGAJOS[],INT TAMANIO[],INT LEG)
+
+
+F---->DEVUELVE -1 SI NO ENCUENTRA EL LEGAJO
+F----->SI LO ENCUENTRA DEVUELVE EL INDICE.
+
+ORDENAMIENTO----->    FOR(?)
+			{
+			  FOR(?)
+			    {	
+				IF(?)--->CRITERIO DE ORDENAMIENTO
+				{
+				   SWAP
+				}
+			    }
+			}
+
+HARDCODEAR-------------->
+
+INT vectorInt[T] = {1,2,3,4,5};
+CHAR vectorString[T] = [30] = {"juan","Ana","Maria","Pedro","Agustin"};
+FLOAT vectorFloat[T] = {5.3,2.3,2.3,3.4,5.5};
