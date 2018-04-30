@@ -33,7 +33,7 @@ int main()
 
     for(i=0;i<TAM;i++)
     {
-        printf("%d\n",arrayDeNumeros[i]);
+        printf("\n%d",arrayDeNumeros[i]);
     }
 
 
