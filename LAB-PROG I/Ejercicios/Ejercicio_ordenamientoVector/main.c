@@ -13,7 +13,7 @@ int main()
 
     for(i=0;i<TAM;i++)//ingreso los numeros sin harcodeo
     {
-        printf("\nIngrese un numero: ");
+        printf("Ingrese un numero: ");
         scanf("%d",&arrayDeNumeros[i]);
     }
 
