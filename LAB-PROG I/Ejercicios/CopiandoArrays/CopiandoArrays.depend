@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1525116816 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\copiandoarrays\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+

@@ -4,7 +4,7 @@
 
 int main()
 {
-    int vector[5]={5,2,9,6,5};
+    int vector[5]={10,2,9,6,5};
     int auxiliar; //para guardar el dato
     int i;
     int j;
