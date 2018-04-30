@@ -4,7 +4,7 @@
 #include <string.h>
 #include "../Funciones/utn.h"
 
-#define TAM 5
+#define TAM 5//tamanio del array
 
 int main()
 {
@@ -23,26 +23,32 @@ int main()
 
     while(opcionMenu !=3)
     {
-        opcionMenu = pedirEntero("1.Mostrar \n2.Modificar \n3.Salir\n ");
+        opcionMenu = pedirEntero("\n1.Mostrar \n2.Modificar \n3.Salir\n ");
         switch(opcionMenu)
         {
             case 1:
                 printf("\n\nINDICE -- VALOR\n");
                 for(indiceArray=0;indiceArray<TAM;indiceArray++)
                 {
-                    printf("%d   --  %d",indiceArray,arrayDeNumeros[indiceArray]);
+                    printf("%d      --    %d\n",indiceArray,arrayDeNumeros[indiceArray]);
                 }
                 break;
 
             case 2:
-                printf("\nIngrese el indice para modificar su valor: ");
+                indiceArray = pedirEntero("\nIngrese el indice para modificar su valor: ");
                 if(indiceArray >= 0 && indiceArray < TAM )
                 {
-                    valorIngresado = pedirEntero("Ingrese el valor: \n");
+                    valorIngresado = pedirEntero("\nIngrese el valor: ");
+                    arrayDeNumeros[indiceArray] = valorIngresado;
+                }
+                else
+                {
+                    printf("No existe el valor ingresado");
                 }
                 break;
 
             case 3:
+
                 break;
 
 

@@ -6,3 +6,10 @@
 
 1525102044 c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\funciones\utn.h
 
+1525115751 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\clase_05_mostrar_modificar vector\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"../Funciones/utn.h"
+
