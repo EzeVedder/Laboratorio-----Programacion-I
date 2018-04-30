@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "utn.h"
 
 int pedirEntero(char mensaje[])
 {
@@ -26,9 +27,9 @@ char pedirCaracter(char mensaje[])
     return auxiliar;
 }
 
-char numeroAleatorio(int desde, int hasta, int iniciar)
+/*char numeroAleatorio(int desde, int hasta, int iniciar)
 {
     if(iniciar)
         srand(time(NULL));
     return desde + rand()% (hasta + 1 - desde);
-}
+}*/

@@ -26,9 +26,6 @@ int buscarValor(int vec[],int tam,int valor){
         }
     }
 
-
-
-
     return index;
 
 }
