@@ -8,7 +8,8 @@ int main()
     //int legajoAux;
     int i;
     //int j;
-    //float sueldo[MAX],sueldoAux;
+    float sueldo[MAX]
+    //float sueldoAux;
     char nombre[MAX][30];
     //char nombreAux[30];
 
@@ -21,6 +22,9 @@ int main()
         printf("Ingrese el nombre del empleado: ");
         fflush(stdin);
         gets(nombre[i]);
+
+        printf("Ingrese el sueldo del empleado: ");
+        scanf("%f",&sueldo[i]);
 
     }
         for(i=0;i<MAX;i++)
