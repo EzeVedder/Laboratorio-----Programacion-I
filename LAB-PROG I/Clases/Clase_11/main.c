@@ -21,6 +21,10 @@ int main()
             case 1:
                 for(i=0;i<TAMANIO;i++)
                 {
+                    printf("Ingrese su nombre: ");
+                    fflush(stdin);
+                    printf("Ingrese su Password: ");
+                    gets(eGenerica.nombre[i]);
 
                 }
 
