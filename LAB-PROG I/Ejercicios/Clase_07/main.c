@@ -13,7 +13,7 @@ int main()
 
     aux = strlen(nombre);
 
-    printf("La cadena %s contiene %d caracteres",nombre,aux);
+    printf("La cadena %s contiene %d letras",nombre,aux);
     fflush(stdin);
     /*char nombre[30];
     char nombre2[30];
