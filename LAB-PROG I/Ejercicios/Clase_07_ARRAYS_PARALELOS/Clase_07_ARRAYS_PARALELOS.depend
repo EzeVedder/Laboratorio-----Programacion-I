@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1525377560 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\clase_07_arrays_paralelos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+
