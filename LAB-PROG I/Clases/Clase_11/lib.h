@@ -30,4 +30,11 @@ int eGen_modificacion(eGenerica[] ,int limite, int id);
 
 int eGen_ordenar(eGenerica[] ,int limite, int orden);
 
+/** \brief Valida si el dato que recibe es numerico
+ *
+ * \param str[] char Array que va a ser analizado
+ * \return int Retorna 1 si es numero y 0 si no lo es
+ *
+ */
+int validarNumerico(char str[]);
 

@@ -169,3 +169,16 @@ int eGen_alta(eGenerica  listado[],int limite)
     return retorno;
 }
 
+
+int validarNumerico(char str[])
+{
+    int i=0;
+    while(str[i] != '\0')//mientras no haya salto de linea
+    {
+        if(str[i] < '0' || str[i] > '9')
+            return 0;
+        i++;
+    }
+
+    return 1;
+}
