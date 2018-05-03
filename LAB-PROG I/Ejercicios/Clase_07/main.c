@@ -5,6 +5,16 @@
 
 int main()
 {
+    char nombre[20];
+    int aux;
+
+    printf("Ingrese el nombre: ");
+    gets(nombre);
+
+    aux = strlen(nombre);
+
+    printf("La cadena %s contiene %d caracteres",nombre,aux);
+    fflush(stdin);
     /*char nombre[30];
     char nombre2[30];
     int comparar;
