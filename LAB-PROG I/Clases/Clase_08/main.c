@@ -33,7 +33,7 @@ int main()
     //-------------------------------
 
     //ORDENAMIENTO
-    for(i=0;i<T-1; i++)//empiezo desde el primer elemento hasta el ultimo
+    for(i=0;i<T; i++)//empiezo desde el primer elemento hasta el ultimo
     {
         for(j=i+1; j<T; j++ )//recorro el array desde donde esta parado i
         {
