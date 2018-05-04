@@ -1,18 +1,18 @@
 # depslib dependency file v1.0
-1525356273 source:c:\users\alumno\desktop\lab\lab-prog i\clases\clase_11\lib.c
+1525442734 source:c:\users\alumno\desktop\lab\lab-prog i\clases\clase_11\lib.c
 	<stdio.h>
 	<conio.h>
 	<stdlib.h>
 	<string.h>
 	"lib.h"
 
-1525358507 source:c:\users\alumno\desktop\lab\lab-prog i\clases\clase_11\main.c
+1525442734 source:c:\users\alumno\desktop\lab\lab-prog i\clases\clase_11\main.c
 	<stdio.h>
 	<stdlib.h>
 	"lib.h"
 	<conio.h>
 
-1525355605 c:\users\alumno\desktop\lab\lab-prog i\clases\clase_11\lib.h
+1525442734 c:\users\alumno\desktop\lab\lab-prog i\clases\clase_11\lib.h
 
 1525373005 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\clases\clase_11\main.c
 	<stdio.h>
