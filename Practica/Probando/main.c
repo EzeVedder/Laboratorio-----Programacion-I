@@ -6,19 +6,24 @@ typedef struct
 {
     char nombre[20];
     int edad;
+    char descripcion[50];
 }ePersona;
 
 
 int main()
 {
+    ePersona persona;
 
-
-    printf("Ingrese nombre: ");
     fflush(stdin);
-    gets(ePersona.nombre);
+    printf("Ingrese nombre: ");
+    gets(persona.nombre);
     printf("Ingrese edad: ");
-    scanf("%d",&ePersona.edad);
+    scanf("%d",&persona.edad);
+    fflush(stdin);
+    printf("Ingrese descripcion: ");
+    gets(persona.descripcion);
 
-    printf("Hello world!\n");
+    printf("\nNOMBRE\t EDAD \t DESCRIPCION\n");
+    printf("%s %3d %15s",persona.nombre,persona.edad,persona.descripcion);
     return 0;
 }
