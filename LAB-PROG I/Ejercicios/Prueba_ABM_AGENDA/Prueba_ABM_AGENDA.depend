@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1525565681 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\prueba_abm_agenda\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"validaciones.h"
+
+1525564844 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\prueba_abm_agenda\validaciones.c
+	"validaciones.h"
+	<stdio.h>
+	<string.h>
+
+1525565646 c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\prueba_abm_agenda\validaciones.h
+

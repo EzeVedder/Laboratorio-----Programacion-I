@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1525557066 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\prueba_validacion\main.c
+	<stdio.h>
+	<stdlib.h>
+	"validaciones.h"
+
+1525557066 source:c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\prueba_validacion\validaciones.c
+	"validaciones.h"
+	<string.h>
+	<stdlib.h>
+	<stdio.h>
+
+1525557066 c:\users\ezepane\documents\utn\2018\lab\lab-prog i\ejercicios\prueba_validacion\validaciones.h
+
