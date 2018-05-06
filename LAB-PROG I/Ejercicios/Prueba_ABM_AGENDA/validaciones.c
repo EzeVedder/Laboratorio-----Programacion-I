@@ -127,3 +127,25 @@ int buscarPrimerOcurrencia(int array[],int cantidad_de_elementos,int valor)
 
     return -1;
 }
+//estructuras---------
+void inicializarArrayContactos(eContactos arrayContactos[],int cantidadDeElementos,int valor)
+{
+    int i;
+    for(i=0; i < cantidadDeElementos; i++)
+    {
+        arrayContactos[i].legajo == valor;
+    }
+}
+
+int buscarPrimerOcurrencia(eContactos arrayContactos[],int cantidadDeElementos,int valor)
+{
+    int i;
+    for(i=0; i < cantidadDeElementos; i++)
+    {
+        if(arrayContactos[i].legajo == valor)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
