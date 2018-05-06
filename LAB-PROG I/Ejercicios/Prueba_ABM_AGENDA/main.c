@@ -147,7 +147,7 @@ int main()
                         {
                             continue;
                         }
-                        if(strcmp(arrayApellidos[i],arrayApellidos[j]))
+                        if(strcmp(arrayApellidos[i],arrayApellidos[j])>0)
                         {
                             strcpy(auxNombres,arrayNombres[i]);
                             strcpy(arrayNombres[i],arrayNombres[j]);
