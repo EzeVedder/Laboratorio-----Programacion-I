@@ -66,7 +66,7 @@ int validarTelefono(char str[])
 
 void getString(char mensaje[],char input[])
 {
-    printf(mensaje);
+    printf("%s",mensaje);
     scanf("%s",input);
 }
 
@@ -104,14 +104,26 @@ int getInt(char mensaje[])
     return aux;
 }
 
-void mostrarContactos(char nombres[],char apellidos[],int legajos[],int tamanio)
+void inicializarArray(int array[],int cantidad_de_elementos,int valor)
 {
     int i;
-    for(i=0;i<tamanio;i++)
+    for(i=0;i<cantidad_de_elementos;i++)
     {
-        if(legajos[i] != -1)
+        array[i] = valor;
+    }
+
+}
+
+int buscarPrimerOcurrencia(int array[],int cantidad_de_elementos,int valor)
+{
+    int i;
+    for(i=0;i<cantidad_de_elementos;i++)
+    {
+        if(array[i] == valor)
         {
-            printf("%s - %s - %d",nombres[i],apellidos[i],legajos[i]);
+            return i;
         }
     }
+
+    return -1;
 }

@@ -9,4 +9,5 @@ int getStringNumerico(char mensaje[],char input[]);
 
 int getInt(char mensaje[]);
 
-void mostrarContactos(char nombres[],char apellidos[],int legajos[],int tamanio);
+void inicializarArray(int array[],int cantidad_de_elementos,int valor);
+int buscarPrimerOcurrencia(int array[],int cantidad_de_elementos,int valor);

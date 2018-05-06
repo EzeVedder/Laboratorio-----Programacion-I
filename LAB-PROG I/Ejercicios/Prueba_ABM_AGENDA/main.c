@@ -7,16 +7,10 @@
 
 #define QTY_CLIENTES 200
 
-
-
-void inicializarArray(int array[],int cantidad_de_elementos,int valor);
-int buscarPrimerOcurrencia(int array[],int cantidad_de_elementos,int valor);
-
-
 int main()
 {
     //array para guardar la informacion
-    char arrayNombres[QTY_CLIENTES][50];//TAMANIO DE LA AGENDA Y CANTIDAD DE CARACTERES QUE PERMITE CADA INDICE
+    char arrayNombres[QTY_CLIENTES][60];//TAMANIO DE LA AGENDA Y CANTIDAD DE CARACTERES QUE PERMITE CADA INDICE
     char arrayApellidos[QTY_CLIENTES][50];
     int arraylegajos[QTY_CLIENTES];//TAMANIO DE LEGAJOS ES IGUAL A CANTIDAD DE CLIENTES QUE EXISTAN
     //-------------------------------------------------------
@@ -32,12 +26,13 @@ int main()
     int opcion = 0;
     int eliminarLegajo;
     int i;
+    int j;
 
     inicializarArray(arraylegajos,QTY_CLIENTES,-1);//inicializamos en -1 todos los indices del array - POSICION VACIA
     do
     {
         printf("\n\t AGENDA DE CONTACTOS\n\n");
-        opcion = getInt("1.CREAR CONTACTO\n2.ELIMINAR CONTACTO\n3.MODIFICAR CONTACTO\n4.MOSTRAR CONTACTOS\n5.ORDENAR\n6.SALIR\n");
+        opcion = getInt("1. CREAR CONTACTO\n2. ELIMINAR CONTACTO\n3. MODIFICAR CONTACTO\n4. MOSTRAR CONTACTOS\n5. ORDENAR\n6. SALIR\n");
 
         switch(opcion)
         {
@@ -129,10 +124,48 @@ int main()
                 break;
             case 4:
                 printf("\nMOSTRAR CONTACTOS\n");
-                mostrarContactos(arrayNombres,arrayApellidos,arraylegajos,QTY_CLIENTES);
+                for(i=0;i<QTY_CLIENTES;i++)
+                {
+                    if(arraylegajos[i] != -1)
+                    {
+                        printf("%s - %s - %d\n",arrayNombres[i],arrayApellidos[i],arraylegajos[i]);
+                    }
+                }
+                break;
+
+            case 5:
+                printf("\nORDENAR CONTACTOS\n");
+                for(i=0; i<QTY_CLIENTES -1 ;i++)
+                {
+                    if(arraylegajos[i] == -1)
+                    {
+                        continue;
+                    }
+                        for(j=i+1;j<QTY_CLIENTES;j++)
+                        {
+                            if(arraylegajos[j] == -1)
+                            {
+                                continue;
+                            }
+                            if(strcmp(arrayApellidos[i],arrayApellidos[j]))
+                            {
+                                strcpy(auxNombres,arrayNombres[i]);
+                                strcpy(arrayNombres[i],arrayNombres[j]);
+                                strcpy(arrayNombres[j],auxNombres);
+
+                                strcpy(auxApellidos,arrayApellidos[i]);
+                                strcpy(arrayApellidos[i],arrayApellidos[j]);
+                                strcpy(arrayApellidos[j],auxApellidos);
+
+                                auxLegajo = arraylegajos[i];
+                                arraylegajos[i] = arraylegajos[j];
+                                arraylegajos[j] = auxLegajo;
+                            }//criterio de ordenacion
+                       }//for j
+                }//for i
+                printf("\n----->>>>LA LISTA SE HA ORDENADO SATISFACTORIAMENTE!!!\n");
                 break;
         }
-
     }while(opcion != 6);
 
     printf("------>>>Hasta luego...\n");
@@ -143,36 +176,5 @@ int main()
 
 
 
-void mostrarMenu(void)
-{
-    printf("\n\t AGENDA DE CONTACTOS\n\n");
-    printf("1.CREAR CONTACTO\n2.ELIMINAR CONTACTO\n3.MODIFICAR CONTACTO\n4.MOSTRAR CONTACTOS\n5.SALIR\n");
 
-}
-
-
-
-void inicializarArray(int array[],int cantidad_de_elementos,int valor)
-{
-    int i;
-    for(i=0;i<cantidad_de_elementos;i++)
-    {
-        array[i] = valor;
-    }
-
-}
-
-int buscarPrimerOcurrencia(int array[],int cantidad_de_elementos,int valor)
-{
-    int i;
-    for(i=0;i<cantidad_de_elementos;i++)
-    {
-        if(array[i] == valor)
-        {
-            return i;
-        }
-    }
-
-    return -1;
-}
 
