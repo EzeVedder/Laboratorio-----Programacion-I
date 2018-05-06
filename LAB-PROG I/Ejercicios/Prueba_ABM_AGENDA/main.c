@@ -141,27 +141,27 @@ int main()
                     {
                         continue;
                     }
-                        for(j=i+1;j<QTY_CLIENTES;j++)
+                    for(j= i+1 ;j < QTY_CLIENTES  ;j++)
+                    {
+                        if(arraylegajos[j] == -1)
                         {
-                            if(arraylegajos[j] == -1)
-                            {
-                                continue;
-                            }
-                            if(strcmp(arrayApellidos[i],arrayApellidos[j]))
-                            {
-                                strcpy(auxNombres,arrayNombres[i]);
-                                strcpy(arrayNombres[i],arrayNombres[j]);
-                                strcpy(arrayNombres[j],auxNombres);
+                            continue;
+                        }
+                        if(strcmp(arrayApellidos[i],arrayApellidos[j]))
+                        {
+                            strcpy(auxNombres,arrayNombres[i]);
+                            strcpy(arrayNombres[i],arrayNombres[j]);
+                            strcpy(arrayNombres[j],auxNombres);
 
-                                strcpy(auxApellidos,arrayApellidos[i]);
-                                strcpy(arrayApellidos[i],arrayApellidos[j]);
-                                strcpy(arrayApellidos[j],auxApellidos);
+                            strcpy(auxApellidos,arrayApellidos[i]);
+                            strcpy(arrayApellidos[i],arrayApellidos[j]);
+                            strcpy(arrayApellidos[j],auxApellidos);
 
-                                auxLegajo = arraylegajos[i];
-                                arraylegajos[i] = arraylegajos[j];
-                                arraylegajos[j] = auxLegajo;
-                            }//criterio de ordenacion
-                       }//for j
+                            auxLegajo = arraylegajos[i];
+                            arraylegajos[i] = arraylegajos[j];
+                            arraylegajos[j] = auxLegajo;
+                        }//criterio de ordenacion
+                    }//for j
                 }//for i
                 printf("\n----->>>>LA LISTA SE HA ORDENADO SATISFACTORIAMENTE!!!\n");
                 break;
