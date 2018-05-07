@@ -36,7 +36,7 @@ int main()
             case 1:
                 printf("\nALTA\n");
                 indiceLugarLibre = buscarPrimerOcurrenciaEstructuras(arrayContactos,QTY_CONTACTOS,-1);
-                if(indiceLugarLibre == -1)
+                if(indiceLugarLibre != -1)
                 {
                     printf("\n-------->>>>>NO HAY LUGARES LIBRES\n");
                     break;
@@ -46,7 +46,7 @@ int main()
                     printf("\nEL NOMBRE DEBE CONTENER SOLO LETRAS!!!");
                     break;
                 }
-                if(!getStringLetras("Ingrese el apellido: ",auxiliarApellido));
+                if(!getStringLetras("Ingrese el apellido: ",auxiliarApellido))
                 {
                     printf("\nEL APELLIDO DEBE CONTENER SOLO LETRAS!!!");
                     break;
@@ -139,6 +139,17 @@ int main()
                     }
                 }
                 break;
+
+                case 5:
+                    printf("\nMOSTRAR\n");
+                    for(i=0; i <QTY_CONTACTOS ; i++)
+                    {
+                        if(arrayContactos[i].legajo != -1)
+                        {
+                            printf("%s %s %d\n",arrayContactos[i].nombre,arrayContactos[i].apellido,arrayContactos[i].legajo);
+                        }
+                    }
+                    break;
 
 
         }
