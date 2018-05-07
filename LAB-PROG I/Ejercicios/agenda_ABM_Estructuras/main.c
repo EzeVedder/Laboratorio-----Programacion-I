@@ -34,14 +34,13 @@ int main()
         switch(opcion)
         {
             case 1:
-                printf("\nALTA");
+                printf("\nALTA\n");
                 indiceLugarLibre = buscarPrimerOcurrenciaEstructuras(arrayContactos,QTY_CONTACTOS,-1);
                 if(indiceLugarLibre == -1)
                 {
                     printf("\n-------->>>>>NO HAY LUGARES LIBRES\n");
                     break;
                 }
-                printf("\nALTA\n");
                 if(!getStringLetras("Ingrese el nombre: ",auxiliarNombre))
                 {
                     printf("\nEL NOMBRE DEBE CONTENER SOLO LETRAS!!!");
@@ -68,11 +67,10 @@ int main()
                 strcpy(arrayContactos[indiceLugarLibre].nombre,auxiliarNombre);
                 strcpy(arrayContactos[indiceLugarLibre].apellido,auxiliarApellido);
                 arrayContactos[indiceLugarLibre].legajo = auxiliarLegajo;
-
                 break;
 
             case 2:
-                printf("\nBAJA");
+                printf("\nBAJA\n");
                 if(!getStringNumerico("Ingrese el legajo a dar de baja",auxiliarLegajoStr))
                 {
                     printf("\nEL LEGAJO NO PUEDE CONTENER LETRAS!!!");
@@ -89,7 +87,7 @@ int main()
                 break;
 
             case 3:
-                printf("\nMODIFICAR");
+                printf("\nMODIFICAR\n");
                 if(!getStringLetras("Ingrese el legajo a modificar",auxiliarLegajoStr))
                 {
                     printf("\nEL LEGAJO NO PUEDE CONTENER LETRAS!!!");
@@ -119,6 +117,27 @@ int main()
                 break;
 
             case 4:
+                printf("\nORDENAR\n");
+                for(i=0; i<QTY_CONTACTOS -1; i++)
+                {
+                    if(arrayContactos[i].legajo == -1)
+                    {
+                        continue;
+                    }
+                    for(j=i+1; j<QTY_CONTACTOS; j++)
+                    {
+                        if(arrayContactos[j].legajo == -1)
+                        {
+                            continue;
+                        }
+                        if(strcmp(arrayContactos[i].apellido,arrayContactos[j].apellido)>0)
+                        {
+                            auxiliarContacto = arrayContactos[j];
+                            arrayContactos[j] = arrayContactos[i];
+                            arrayContactos[i] = auxiliarContacto;
+                        }
+                    }
+                }
                 break;
 
 
