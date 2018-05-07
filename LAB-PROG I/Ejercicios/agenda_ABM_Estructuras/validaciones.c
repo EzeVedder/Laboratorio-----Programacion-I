@@ -133,7 +133,7 @@ void inicializarArrayContactos(eContactos arrayContactos[],int cantidadDeElement
     int i;
     for(i=0; i < cantidadDeElementos; i++)
     {
-        arrayContactos[i].legajo == valor;
+        arrayContactos[i].legajo = valor;
     }
 }
 

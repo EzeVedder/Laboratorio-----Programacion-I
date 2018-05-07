@@ -36,7 +36,7 @@ int main()
             case 1:
                 printf("\nALTA\n");
                 indiceLugarLibre = buscarPrimerOcurrenciaEstructuras(arrayContactos,QTY_CONTACTOS,-1);
-                if(indiceLugarLibre != -1)
+                if(indiceLugarLibre == -1)
                 {
                     printf("\n-------->>>>>NO HAY LUGARES LIBRES\n");
                     break;
@@ -146,11 +146,10 @@ int main()
                     {
                         if(arrayContactos[i].legajo != -1)
                         {
-                            printf("%s %s %d\n",arrayContactos[i].nombre,arrayContactos[i].apellido,arrayContactos[i].legajo);
+                            printf("%s - %s - %d\n",arrayContactos[i].nombre,arrayContactos[i].apellido,arrayContactos[i].legajo);
                         }
                     }
                     break;
-
 
         }
     }while(opcion != 6);
