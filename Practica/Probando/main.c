@@ -13,7 +13,10 @@ typedef struct
 int main()
 {
     ePersona persona;
+    int i;
 
+    for(i=0;i<3;i++)
+    {
     fflush(stdin);
     printf("Ingrese nombre: ");
     gets(persona.nombre);
@@ -22,7 +25,7 @@ int main()
     fflush(stdin);
     printf("Ingrese descripcion: ");
     gets(persona.descripcion);
-
+    }
     printf("\nNOMBRE\t EDAD  DESCRIPCION\n");
     printf("%s %3d %15s",persona.nombre,persona.edad,persona.descripcion);
     return 0;
