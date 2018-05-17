@@ -1,0 +1,29 @@
+# depslib dependency file v1.0
+1526521586 source:c:\users\lucho\desktop\parcial\generales.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"generales.h"
+
+1526522185 c:\users\lucho\desktop\parcial\generales.h
+
+1526522179 source:c:\users\lucho\desktop\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"generales.h"
+
+1526557970 source:c:\users\alumno\desktop\lab\lab-prog i\clases\parcialdeprueba-master\parcial\generales.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	"generales.h"
+
+1526557970 c:\users\alumno\desktop\lab\lab-prog i\clases\parcialdeprueba-master\parcial\generales.h
+
+1526557970 source:c:\users\alumno\desktop\lab\lab-prog i\clases\parcialdeprueba-master\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	"generales.h"
+
