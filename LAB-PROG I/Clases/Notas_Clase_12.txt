@@ -1,0 +1,76 @@
+----Punteros en C----17/05/2018
+
+
+COMANDOS DE GIT --->GIT CLONE
+		--->GIT STATUS
+
+cd (PARA ENTRAR A LA CARPETA) + P + tab -->Y APARECE EL DIRECTORIO (en este caso PunterosEnC). SI DIGITO git status 
+		APARECE LA INFO DEL REPOSITORIO.
+
+GIT ADD .  (GIT ADD ESPACIO PUNTO)
+
+GIT COMMIT -M "PRIMER COMMIT" (PRIMER COMENTARIO) --->CADA COMMIT TIENE QUE DECIR LO QUE SE ESTA HACIENDO
+
+GIT PUSH ORIGIN MASTER -F --->EMPAQUETAR TODOS LOS COMMIT
+
+-------------------------------------------------------------------
+
+PUNTEROS--->DIRECCIONES EN DONDE SE ENCUENTRA EL DATO (MEMORIA RAM)
+
+*punteroNumero--->no es un entero, es un puntero a entero, no le puedo asignar un valor
+*PUNTERO-->LE PUEDO ASIGNAR UNA DIRECCION DE MEMORIA
+	
+CON "%P" ME MUESTRA LA DIRECCION EN HEXADECIMAL
+
+	printf("%p\n",&numero);
+    	printf("%p\n",punteroNumero);
+   	printf("%p\n",&punteroNumero);
+
+todos los punteros tienen direccion de memoria y un tipo de dato
+
+puntero es direccion de memoria (sin el (*) asteristico)
+*puntero (con el (*) asteristico) es el array  osea el valor
+
+Dependiendo de donde se ubique el asterisco, el dato que se muestra es diferente
+
+printf("\nnumero :%d",(*puntero+i));
+printf("\nnumero :%d",*(puntero+i));
+printf("\nnumero :%d",(puntero+i));
+
+
+
+
+    int numeros[3];
+
+AHORA SE PODRIA PONER *PUNTER[]--->Y ES UN ARRAY DE PUNTERO	
+
+    int *puntero;//es una direccion de memoria y tambien tiene un tipo de dato
+    puntero = numeros;
+
+    numeros[0] = 9;
+    numeros[1] = 999;
+    numeros[2] = 9999;
+    printf("\nnumero :%d",puntero);
+    printf("\nnumero :%d",numeros);
+
+    mostrar(numeros,3);
+
+
+TODO LO QUE ES STRING AHORA VA A SER PUNTERO!!!!!HASTA EL '\0'  
+
+LO QUE ERA OPERADOR PUNTO EN ESTRUCTURA AHORA ES FLECHA EN PUNTEROS
+
+
+
+DESPLAZAMIENTO  
+
+ASTERISTICO SIRVE PARA MOSTRAR EL VALOR QUE CONTIENE LA VARIABLE
+
+    numeros[0] = 9;
+    numeros[1] = 999;
+    numeros[2] = 9999;
+    printf("\nnumero :%d",*puntero);
+    printf("\nnumero :%d",*(puntero+1));
+    printf("\nnumero :%d",*(puntero+2));
+    printf("\nnumero :%d",*(puntero+3));
+    printf("\nnumero :%d",*(puntero+4));
