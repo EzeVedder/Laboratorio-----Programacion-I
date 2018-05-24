@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1526991011 source:c:\test\scarafilo\archivos2\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1527017481 source:c:\test\scarafilo\clase archivos\archivos2\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1527028298 source:d:\##clonegit\clase 17\laboratorio-----programacion-i\lab-prog i\clases\clase 17\archivos2\main.c
+	<stdio.h>
+	<stdlib.h>
+
