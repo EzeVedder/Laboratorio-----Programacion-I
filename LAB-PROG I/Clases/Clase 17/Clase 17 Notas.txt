@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE* pArchivo;//donde se ubica el archivo - como se gestiona PUNTERO AL ARCHIVO
+    char cadena[50] = "hola ";//abrirlo usarlo y cerrarlo  --> se pueden perder datos
+
+    /*hay que poner el path si quiero que busque en carpeta en concreto raiz del proyecto
+    secuencia de escape -->la W es ek modo de apertura del archivo*/
+
+    pArchivo = fopen("archivo.txt","w");
+
+    if(pArchivo!= NULL)
+    {
+        fprintf(pArchivo,"%s--%d",cadena,156);
+        fclose(pArchivo);
+        printf("Guardado!");
+    }
+    else
+    {
+        printf("Imposible guardar");
+    }
+
+
+
+    return 0;
+}
+
+
+
+
+
+
+
+LAS ESTRUCTURAS SE GUARDAN EN BINARIO
